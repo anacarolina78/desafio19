@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trocar Cor de Fundo</title>
+  </head>
+  <body>
+    <h1>Trocar Cor de Fundo</h1>
+    <button type="button" onclick="trocarFundo()">Trocar a cor do fundo</button>
+    <style>
+      body {
+        margin: 0;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+      }
+      h1 {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      button {
+        border: none;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      function trocarFundo() {
+        var cor = prompt(
+          "Digite o nome (em inglês) ou código (hexadecimal) da cor desejada:"
+        );
+        document.body.style.backgroundColor = cor;
+      }
+    </script>
+  </body>
+</html>
